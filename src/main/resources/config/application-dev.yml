@@ -43,8 +43,10 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/fjcintranet
-    username: postgres
-    password: 321321
+    #username: postgres
+    username: gitpod
+    #password: 321321
+    password:
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -58,6 +60,7 @@ spring:
       hibernate.cache.use_second_level_cache: true
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
+      hibernate.ddl-auto: update
   data:
     elasticsearch:
       properties:
